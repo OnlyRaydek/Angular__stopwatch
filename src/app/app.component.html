@@ -1,0 +1,31 @@
+<div class="stopwatch">
+  <h2 class="stopwatch__header">
+    Stopwatch
+  </h2>
+  <div class="stopwatch__value">
+    {{ hours }}:{{ minutes }}:{{ seconds }}
+  </div>
+
+  <div class="stopwatch__buttons">
+    <button
+      class="stopwatch__button stopwatch__button--start"
+      (click)="start()"
+    >
+      {{ startButtonValue }}
+    </button>
+
+    <button
+      class="stopwatch__button stopwatch__button--wait"
+      (click)="wait()"
+    >
+      Wait
+    </button>
+
+    <button
+      class="stopwatch__button stopwatch__button--reset"
+      (click)="reset()"
+    >
+      Reset
+    </button>
+  </div>
+</div>
